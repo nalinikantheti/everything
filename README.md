@@ -1,23 +1,5 @@
-# Everything
+***THREE THINGS I WOULD CHANGE***
 
-This is the C4C monorepo containing all of our active projects.
-
-Deployable units exist in `/apps`, inside each folder there is a README explaining how that unit is tested and deployed.
-
-Business logic and supporting library for those deployable units exist in `/libs`. These are composable units of software that are not coupled to a specific deployment framework or strategy, and are meant to be easily reused in future projects.
-
-The purpose of `README.md`s in this repository are to explain the usage of the application. The bare minimum you need to get it running. More detailed developer and public documentation exists on the wiki. `README.md`s will often link to relevant wiki pages.
-
-
-Links to Project `README.md`
-
-- [Monarch](./apps/monarch/README.md)
-- [c4cneu.com](./apps/dotcom/README.md)
-
-
-## 🔨 Development
-1. Install Node v16.x
-2. Clone this repo
-3. `yarn install`
-
-When adding new dependencies, use `yarn add` or its dev dependency equivalent. Thanks to Nx, each package will only be installed once, and each app knows how to bundle itself correctly based on its dependencies.
+1. The biggest improvement I could see happening in this codebase is implementing error handling. Obviously, it wasn't included in the tutorial, but even rudimentary error handling like try catch blocks, or console log statements would immediately improve the future proofing of this codebase 100 fold.
+2. Input validation. This was mentioned in the prompt but that doesn't undermine it's importance. It would immediately improve the codebase to validate the URL format to not only increase ease of use but to prevent vulnerabilities such as SQL injection attacks. This could be done with a library or framework
+3. Implementing URL analytics. this isn't necessary but it coul dbe super cool to track and analyze URL usage by capturing and storing metrics such as the number of times a shortened URL is accessed, timestamps, referral information, and user agents.
